@@ -144,7 +144,7 @@ U 1 1 61A15B4A
 P 9250 5300
 F 0 "TP10" H 9308 5418 50  0000 L CNN
 F 1 "TestPoint" H 9308 5327 50  0000 L CNN
-F 2 "CapTouchKeyboard:PC_TEST_POINT_SMD" H 9450 5300 50  0001 C CNN
+F 2 "zdigikey-footprints:PC_TEST_POINT_SMD" H 9450 5300 50  0001 C CNN
 F 3 "~" H 9450 5300 50  0001 C CNN
 	1    9250 5300
 	1    0    0    -1  
@@ -206,7 +206,7 @@ U 1 1 61A4565D
 P 8750 5300
 F 0 "TP9" H 8808 5418 50  0000 L CNN
 F 1 "TestPoint" H 8808 5327 50  0000 L CNN
-F 2 "CapTouchKeyboard:PC_TEST_POINT_SMD" H 8950 5300 50  0001 C CNN
+F 2 "zdigikey-footprints:PC_TEST_POINT_SMD" H 8950 5300 50  0001 C CNN
 F 3 "~" H 8950 5300 50  0001 C CNN
 	1    8750 5300
 	1    0    0    -1  
@@ -228,7 +228,7 @@ U 1 1 61A2E8C1
 P 4200 3500
 F 0 "TP5" H 4258 3618 50  0000 L CNN
 F 1 "TestPoint" H 4258 3527 50  0000 L CNN
-F 2 "CapTouchKeyboard:Circular_Gator" H 4400 3500 50  0001 C CNN
+F 2 "zTaigaCustom:Circular_Gator" H 4400 3500 50  0001 C CNN
 F 3 "~" H 4400 3500 50  0001 C CNN
 	1    4200 3500
 	1    0    0    -1  
@@ -239,7 +239,7 @@ U 1 1 61A2F094
 P 2350 3500
 F 0 "TP1" H 2408 3618 50  0000 L CNN
 F 1 "TestPoint" H 2408 3527 50  0000 L CNN
-F 2 "CapTouchKeyboard:Arrow_Gator" H 2550 3500 50  0001 C CNN
+F 2 "zTaigaCustom:Arrow_Gator" H 2550 3500 50  0001 C CNN
 F 3 "~" H 2550 3500 50  0001 C CNN
 	1    2350 3500
 	1    0    0    -1  
@@ -262,7 +262,7 @@ U 1 1 61A4DA96
 P 4850 3500
 F 0 "TP6" H 4908 3618 50  0000 L CNN
 F 1 "TestPoint" H 4908 3527 50  0000 L CNN
-F 2 "CapTouchKeyboard:Circular_Gator" H 5050 3500 50  0001 C CNN
+F 2 "zTaigaCustom:Circular_Gator" H 5050 3500 50  0001 C CNN
 F 3 "~" H 5050 3500 50  0001 C CNN
 	1    4850 3500
 	1    0    0    -1  
@@ -299,7 +299,7 @@ U 1 1 61B596A1
 P 2800 3500
 F 0 "TP2" H 2858 3618 50  0000 L CNN
 F 1 "TestPoint" H 2858 3527 50  0000 L CNN
-F 2 "CapTouchKeyboard:Arrow_Gator" H 3000 3500 50  0001 C CNN
+F 2 "zTaigaCustom:Arrow_Gator" H 3000 3500 50  0001 C CNN
 F 3 "~" H 3000 3500 50  0001 C CNN
 	1    2800 3500
 	1    0    0    -1  
@@ -310,7 +310,7 @@ U 1 1 61B59B41
 P 3300 3500
 F 0 "TP3" H 3358 3618 50  0000 L CNN
 F 1 "TestPoint" H 3358 3527 50  0000 L CNN
-F 2 "CapTouchKeyboard:Arrow_Gator" H 3500 3500 50  0001 C CNN
+F 2 "zTaigaCustom:Arrow_Gator" H 3500 3500 50  0001 C CNN
 F 3 "~" H 3500 3500 50  0001 C CNN
 	1    3300 3500
 	1    0    0    -1  
@@ -321,7 +321,7 @@ U 1 1 61B59F14
 P 3750 3500
 F 0 "TP4" H 3808 3618 50  0000 L CNN
 F 1 "TestPoint" H 3808 3527 50  0000 L CNN
-F 2 "CapTouchKeyboard:Arrow_Gator" H 3950 3500 50  0001 C CNN
+F 2 "zTaigaCustom:Arrow_Gator" H 3950 3500 50  0001 C CNN
 F 3 "~" H 3950 3500 50  0001 C CNN
 	1    3750 3500
 	1    0    0    -1  
@@ -479,7 +479,7 @@ U 1 1 61A6CBF7
 P 5550 3500
 F 0 "TP11" H 5608 3618 50  0000 L CNN
 F 1 "TestPoint" H 5608 3527 50  0000 L CNN
-F 2 "CapTouchKeyboard:Gator" H 5750 3500 50  0001 C CNN
+F 2 "zTaigaCustom:Gator" H 5750 3500 50  0001 C CNN
 F 3 "~" H 5750 3500 50  0001 C CNN
 	1    5550 3500
 	1    0    0    -1  
@@ -504,7 +504,7 @@ U 1 1 61A89829
 P 1900 4700
 F 0 "J3" V 1025 4700 50  0000 C CNN
 F 1 "8-pin_header" V 1116 4700 50  0000 C CNN
-F 2 "CapTouchKeyboard:8-pinheader" H 1850 4900 60  0001 L CNN
+F 2 "zTaigaCustom:8-pinheader" H 1850 4900 60  0001 L CNN
 F 3 "" H 1850 5000 60  0001 L CNN
 	1    1900 4700
 	0    1    1    0   
@@ -515,7 +515,7 @@ U 1 1 61A8A194
 P 4750 2050
 F 0 "J2" V 4549 1908 50  0000 R CNN
 F 1 "8-pin_header" V 4640 1908 50  0000 R CNN
-F 2 "CapTouchKeyboard:8-pinheader" H 4700 2250 60  0001 L CNN
+F 2 "zTaigaCustom:8-pinheader" H 4700 2250 60  0001 L CNN
 F 3 "" H 4700 2350 60  0001 L CNN
 	1    4750 2050
 	0    -1   1    0   

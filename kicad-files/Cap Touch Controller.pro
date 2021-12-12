@@ -1,4 +1,4 @@
-update=11/27/2021 10:38:58 PM
+update=12/11/2021 8:33:46 PM
 version=1
 last_client=kicad
 [general]
@@ -25,7 +25,7 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=Makey Makey Replacement.net
+LastNetListRead=Cap Touch Controller.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
