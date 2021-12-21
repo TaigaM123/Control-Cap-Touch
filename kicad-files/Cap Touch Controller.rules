@@ -1,5 +1,5 @@
 
-(rules PCB Makey Makey Replacement
+(rules PCB Cap Touch Controller
   (snap_angle 
     fortyfive_degree
   )
@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 21)
+    (start_pass_no 8)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -65,12 +65,12 @@
   (class "kicad_default"
     GND +3V3 +5V D+ "Net-(J1-PadB5)" "Net-(J1-PadA8)" "D-" "Net-(J1-PadA5)"
     "Net-(J1-PadB8)" Up Down Left Right Spacebar MouseClick ~RST
-    "LED_1" "LED_A" "LED_2" "LED_3" "LED_B" "Net-(C1-Pad2)" /SWCLK /SWDIO
-    "Net-(U2-Pad4)" "Net-(U1-Pad23)" "Net-(U1-Pad24)" "Net-(U1-Pad31)" "Net-(U1-Pad32)" "Net-(U1-Pad39)" "Net-(U1-Pad40)" "Net-(U1-Pad43)"
+    "Net-(C1-Pad2)" "Net-(U2-Pad4)" "Net-(U1-Pad23)" "Net-(U1-Pad24)" "Net-(U1-Pad32)" "Net-(U1-Pad39)" "Net-(U1-Pad40)" "Net-(U1-Pad43)"
     "Net-(U1-Pad44)" "Net-(U1-Pad49)" "Net-(U1-Pad50)" "Net-(U1-Pad51)" "Net-(U1-Pad53)" "Net-(U1-Pad59)" "Net-(U1-Pad60)" "Net-(U1-Pad38)"
-    "Net-(U1-Pad41)" "Net-(U1-Pad42)" "LED_4" Rmouse 1 2 3 4
-    5 6 7 8 Enter "Net-(U1-Pad25)" "Net-(U1-Pad26)" "Net-(U1-Pad27)"
-    "Net-(U1-Pad28)" "Net-(U1-Pad29)" "Net-(U1-Pad30)" "Net-(U1-Pad35)" "Net-(U1-Pad36)" "Net-(U1-Pad37)"
+    "Net-(U1-Pad41)" "Net-(U1-Pad42)" Rmouse 1 2 3 4 5
+    6 7 8 Enter "Net-(U1-Pad25)" "Net-(U1-Pad26)" "Net-(U1-Pad27)" "Net-(U1-Pad28)"
+    "Net-(U1-Pad35)" "Net-(U1-Pad36)" "Net-(U1-Pad37)" "Net-(U1-Pad57)" "Net-(U1-Pad58)" "Net-(D1-Pad2)" "Net-(D2-Pad2)" "Net-(D3-Pad2)"
+    "Net-(D4-Pad2)" "Net-(D5-Pad2)" "Net-(D6-Pad2)" "Net-(D7-Pad2)" "Net-(U1-Pad1)" "Net-(U1-Pad2)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule

@@ -149,56 +149,6 @@ F 3 "~" H 9450 5300 50  0001 C CNN
 	1    9250 5300
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:LED D1
-U 1 1 61A1AB90
-P 4800 6050
-F 0 "D1" H 4793 5795 50  0000 C CNN
-F 1 "LED" H 4793 5886 50  0000 C CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Castellated" H 4800 6050 50  0001 C CNN
-F 3 "~" H 4800 6050 50  0001 C CNN
-	1    4800 6050
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	4650 6450 4650 6350
-Wire Wire Line
-	5200 6450 5200 6350
-Wire Wire Line
-	5750 6450 5750 6350
-Wire Wire Line
-	5200 6050 5200 5950
-Wire Wire Line
-	4650 6050 4650 5950
-Wire Wire Line
-	5750 6050 5750 5950
-Wire Wire Line
-	4950 5800 4950 6050
-Connection ~ 4950 6050
-Wire Wire Line
-	4550 5950 4650 5950
-Connection ~ 4650 5950
-Connection ~ 5200 5950
-Wire Wire Line
-	5200 5950 5750 5950
-Connection ~ 5750 5950
-Connection ~ 4650 6350
-Connection ~ 5200 6350
-Wire Wire Line
-	5200 6350 5750 6350
-Connection ~ 5750 6350
-Text GLabel 4550 5950 3    50   Input ~ 0
-LED_A
-Text GLabel 4550 6350 3    50   Input ~ 0
-LED_B
-Wire Wire Line
-	4550 6350 4650 6350
-Text GLabel 6050 5800 2    50   Input ~ 0
-LED_3
-Text GLabel 5500 5800 2    50   Input ~ 0
-LED_2
-Text GLabel 4950 5800 2    50   Input ~ 0
-LED_1
 Connection ~ 3600 1250
 $Comp
 L Connector:TestPoint TP9
@@ -289,10 +239,6 @@ F 3 "" H 10650 4250 50  0001 C CNN
 	1    10650 4250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4650 5950 5200 5950
-Wire Wire Line
-	4650 6350 5200 6350
 $Comp
 L Connector:TestPoint TP2
 U 1 1 61B596A1
@@ -414,12 +360,6 @@ F 3 "" H 7850 1150 50  0001 C CNN
 	1    7850 1150
 	0    -1   -1   0   
 $EndComp
-Text GLabel 7950 1550 2    50   Input ~ 0
-LED_2
-Text GLabel 7950 1450 2    50   Input ~ 0
-LED_1
-Text GLabel 7950 2550 2    50   Input ~ 0
-LED_B
 Text GLabel 7950 1650 2    50   Input ~ 0
 Up
 Text GLabel 7950 1750 2    50   Input ~ 0
@@ -435,13 +375,13 @@ MouseClick
 $Comp
 L power:GND #PWR013
 U 1 1 61A23D2A
-P 7250 4950
-F 0 "#PWR013" H 7250 4700 50  0001 C CNN
-F 1 "GND" H 7255 4777 50  0000 C CNN
-F 2 "" H 7250 4950 50  0001 C CNN
-F 3 "" H 7250 4950 50  0001 C CNN
-	1    7250 4950
-	0    -1   1    0   
+P 7150 4950
+F 0 "#PWR013" H 7150 4700 50  0001 C CNN
+F 1 "GND" H 7155 4777 50  0000 C CNN
+F 2 "" H 7150 4950 50  0001 C CNN
+F 3 "" H 7150 4950 50  0001 C CNN
+	1    7150 4950
+	0    1    -1   0   
 $EndComp
 Wire Wire Line
 	6950 1150 7050 1150
@@ -468,11 +408,6 @@ Wire Wire Line
 	7150 1150 7250 1150
 Wire Wire Line
 	7150 4950 7250 4950
-Connection ~ 7250 4950
-Text GLabel 7950 2450 2    50   Input ~ 0
-LED_A
-Text GLabel 7950 2250 2    50   Input ~ 0
-LED_3
 $Comp
 L Connector:TestPoint TP11
 U 1 1 61A6CBF7
@@ -484,14 +419,6 @@ F 3 "~" H 5750 3500 50  0001 C CNN
 	1    5550 3500
 	1    0    0    -1  
 $EndComp
-Text GLabel 6600 5800 2    50   Input ~ 0
-LED_4
-Wire Wire Line
-	5750 6350 6300 6350
-Wire Wire Line
-	6300 6350 6300 6450
-Text GLabel 7950 2350 2    50   Input ~ 0
-LED_4
 Text GLabel 4200 3500 0    50   Input ~ 0
 Rmouse
 Text GLabel 7950 2050 2    50   Input ~ 0
@@ -552,107 +479,10 @@ Text GLabel 4650 2300 0    50   Input ~ 0
 7
 Text GLabel 4650 2400 0    50   Input ~ 0
 8
-Wire Wire Line
-	4950 6050 4950 6450
-Wire Wire Line
-	6050 5800 6050 6050
-Wire Wire Line
-	5500 5800 5500 6050
-$Comp
-L Device:LED D2
-U 1 1 61AA2C14
-P 5350 6050
-F 0 "D2" H 5343 5795 50  0000 C CNN
-F 1 "LED" H 5343 5886 50  0000 C CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Castellated" H 5350 6050 50  0001 C CNN
-F 3 "~" H 5350 6050 50  0001 C CNN
-	1    5350 6050
-	-1   0    0    1   
-$EndComp
-Connection ~ 5500 6050
-Wire Wire Line
-	5500 6050 5500 6450
-$Comp
-L Device:LED D3
-U 1 1 61AA2FD4
-P 5900 6050
-F 0 "D3" H 5893 5795 50  0000 C CNN
-F 1 "LED" H 5893 5886 50  0000 C CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Castellated" H 5900 6050 50  0001 C CNN
-F 3 "~" H 5900 6050 50  0001 C CNN
-	1    5900 6050
-	-1   0    0    1   
-$EndComp
-Connection ~ 6050 6050
-Wire Wire Line
-	6050 6050 6050 6450
-$Comp
-L Device:LED D4
-U 1 1 61AA32CE
-P 6450 6450
-F 0 "D4" H 6443 6195 50  0000 C CNN
-F 1 "LED" H 6443 6286 50  0000 C CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Castellated" H 6450 6450 50  0001 C CNN
-F 3 "~" H 6450 6450 50  0001 C CNN
-	1    6450 6450
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:LED D7
-U 1 1 61AA3601
-P 5900 6450
-F 0 "D7" H 5893 6195 50  0000 C CNN
-F 1 "LED" H 5893 6286 50  0000 C CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Castellated" H 5900 6450 50  0001 C CNN
-F 3 "~" H 5900 6450 50  0001 C CNN
-	1    5900 6450
-	-1   0    0    1   
-$EndComp
-Connection ~ 6050 6450
-Wire Wire Line
-	6050 6450 6050 6650
-$Comp
-L Device:LED D6
-U 1 1 61AA3DB9
-P 5350 6450
-F 0 "D6" H 5343 6195 50  0000 C CNN
-F 1 "LED" H 5343 6286 50  0000 C CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Castellated" H 5350 6450 50  0001 C CNN
-F 3 "~" H 5350 6450 50  0001 C CNN
-	1    5350 6450
-	-1   0    0    1   
-$EndComp
-Connection ~ 5500 6450
-Wire Wire Line
-	5500 6450 5500 6650
-$Comp
-L Device:LED D5
-U 1 1 61AA408B
-P 4800 6450
-F 0 "D5" H 4793 6195 50  0000 C CNN
-F 1 "LED" H 4793 6286 50  0000 C CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Castellated" H 4800 6450 50  0001 C CNN
-F 3 "~" H 4800 6450 50  0001 C CNN
-	1    4800 6450
-	-1   0    0    1   
-$EndComp
-Connection ~ 4950 6450
-Wire Wire Line
-	4950 6450 4950 6650
 Text GLabel 2000 5050 2    50   Input ~ 0
 Enter
 Text GLabel 6550 1550 0    50   Input ~ 0
 Enter
-Connection ~ 6300 6350
-Wire Wire Line
-	6300 6350 6900 6350
-Connection ~ 6600 6450
-Wire Wire Line
-	6600 6450 6600 6650
-Wire Wire Line
-	5750 5950 6900 5950
-Wire Wire Line
-	6600 5800 6600 6450
 $Comp
 L Device:C C5
 U 1 1 61B317CB
@@ -675,4 +505,111 @@ Connection ~ 10650 4250
 Wire Wire Line
 	10650 3950 10850 3950
 Connection ~ 10850 3950
+Connection ~ 7150 4950
+$Comp
+L Device:LED D5
+U 1 1 61AA408B
+P 8100 2650
+F 0 "D5" H 8093 2395 50  0000 C CNN
+F 1 "LED" H 8093 2486 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Castellated" H 8100 2650 50  0001 C CNN
+F 3 "~" H 8100 2650 50  0001 C CNN
+	1    8100 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D6
+U 1 1 61AA3DB9
+P 8100 2750
+F 0 "D6" H 8093 2495 50  0000 C CNN
+F 1 "LED" H 8093 2586 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Castellated" H 8100 2750 50  0001 C CNN
+F 3 "~" H 8100 2750 50  0001 C CNN
+	1    8100 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D7
+U 1 1 61AA3601
+P 8100 2850
+F 0 "D7" H 8093 2595 50  0000 C CNN
+F 1 "LED" H 8093 2686 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Castellated" H 8100 2850 50  0001 C CNN
+F 3 "~" H 8100 2850 50  0001 C CNN
+	1    8100 2850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D4
+U 1 1 61AA32CE
+P 8100 2550
+F 0 "D4" H 8093 2295 50  0000 C CNN
+F 1 "LED" H 8093 2386 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Castellated" H 8100 2550 50  0001 C CNN
+F 3 "~" H 8100 2550 50  0001 C CNN
+	1    8100 2550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8250 2250 8250 2350
+Connection ~ 8250 2350
+Wire Wire Line
+	8250 2350 8250 2450
+Connection ~ 8250 2450
+Wire Wire Line
+	8250 2450 8250 2550
+Connection ~ 8250 2550
+Wire Wire Line
+	8250 2550 8250 2650
+Connection ~ 8250 2650
+Wire Wire Line
+	8250 2650 8250 2750
+Connection ~ 8250 2750
+Wire Wire Line
+	8250 2750 8250 2850
+Connection ~ 8250 2850
+$Comp
+L power:GND #PWR0101
+U 1 1 61C076C0
+P 8250 2850
+F 0 "#PWR0101" H 8250 2600 50  0001 C CNN
+F 1 "GND" H 8255 2677 50  0000 C CNN
+F 2 "" H 8250 2850 50  0001 C CNN
+F 3 "" H 8250 2850 50  0001 C CNN
+	1    8250 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 61AA2FD4
+P 8100 2450
+F 0 "D3" H 8093 2195 50  0000 C CNN
+F 1 "LED" H 8093 2286 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Castellated" H 8100 2450 50  0001 C CNN
+F 3 "~" H 8100 2450 50  0001 C CNN
+	1    8100 2450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 61AA2C14
+P 8100 2350
+F 0 "D2" H 8093 2095 50  0000 C CNN
+F 1 "LED" H 8093 2186 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Castellated" H 8100 2350 50  0001 C CNN
+F 3 "~" H 8100 2350 50  0001 C CNN
+	1    8100 2350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 61A1AB90
+P 8100 2250
+F 0 "D1" H 8093 1995 50  0000 C CNN
+F 1 "LED" H 8093 2086 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Castellated" H 8100 2250 50  0001 C CNN
+F 3 "~" H 8100 2250 50  0001 C CNN
+	1    8100 2250
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
