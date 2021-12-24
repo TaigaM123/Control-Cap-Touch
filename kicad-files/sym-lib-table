@@ -1,3 +1,2 @@
 (sym_lib_table
-  (lib (name Cap-Touch-Controller)(type Legacy)(uri "${KIPRJMOD}/Cap Touch Controller.lib")(options "")(descr ""))
 )

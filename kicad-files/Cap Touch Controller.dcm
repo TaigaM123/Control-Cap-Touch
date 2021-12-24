@@ -1,8 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP 8-pin_header
-D CONN HEADER VERT 3POS 2.54MM
-K WM4201-ND KK 6373
-$ENDCMP
-#
-#End Doc Library

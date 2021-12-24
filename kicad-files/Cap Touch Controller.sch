@@ -118,7 +118,7 @@ F 1 "GND" V 2705 2322 50  0000 R CNN
 F 2 "" H 2700 2450 50  0001 C CNN
 F 3 "" H 2700 2450 50  0001 C CNN
 	1    2700 2450
-	0    -1   -1   0   
+	1    0    0    -1  
 $EndComp
 Connection ~ 2700 2450
 Text GLabel 3300 1650 2    50   Input ~ 0
@@ -349,17 +349,6 @@ F 3 "~" H 7700 1150 50  0001 C CNN
 	1    7700 1150
 	0    1    1    0   
 $EndComp
-$Comp
-L power:GND #PWR03
-U 1 1 61A4F7DA
-P 7850 1150
-F 0 "#PWR03" H 7850 900 50  0001 C CNN
-F 1 "GND" V 7855 1022 50  0000 R CNN
-F 2 "" H 7850 1150 50  0001 C CNN
-F 3 "" H 7850 1150 50  0001 C CNN
-	1    7850 1150
-	0    -1   -1   0   
-$EndComp
 Text GLabel 7950 1650 2    50   Input ~ 0
 Up
 Text GLabel 7950 1750 2    50   Input ~ 0
@@ -384,29 +373,6 @@ F 3 "" H 7150 4950 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	6950 1150 7050 1150
-$Comp
-L MCU_Microchip_SAMD:ATSAMD21J15B-A U1
-U 1 1 61A3E6B2
-P 7250 3050
-F 0 "U1" H 7250 1061 50  0000 C CNN
-F 1 "ATSAMD21J15B-A" H 7250 970 50  0000 C CNN
-F 2 "Package_QFP:TQFP-64_10x10mm_P0.5mm" H 8200 1200 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/SAM_D21_DA1_Family_Data%20Sheet_DS40001882E.pdf" H 7250 4050 50  0001 C CNN
-	1    7250 3050
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	7250 1150 7350 1150
-Connection ~ 7350 1150
-Wire Wire Line
-	7050 1150 7150 1150
-Connection ~ 7050 1150
-Connection ~ 7250 1150
-Connection ~ 7150 1150
-Wire Wire Line
-	7150 1150 7250 1150
-Wire Wire Line
 	7150 4950 7250 4950
 $Comp
 L Connector:TestPoint TP11
@@ -426,26 +392,15 @@ Rmouse
 Text GLabel 2000 4950 2    50   Input ~ 0
 Rmouse
 $Comp
-L Cap-Touch-Controller:8-pin_header J3
+L Connector:Conn_01x08_Female J3
 U 1 1 61A89829
-P 1900 4700
-F 0 "J3" V 1025 4700 50  0000 C CNN
-F 1 "8-pin_header" V 1116 4700 50  0000 C CNN
-F 2 "CapTouchKeyboard:8-pinheader" H 1850 4900 60  0001 L CNN
-F 3 "" H 1850 5000 60  0001 L CNN
-	1    1900 4700
-	0    1    1    0   
-$EndComp
-$Comp
-L Cap-Touch-Controller:8-pin_header J2
-U 1 1 61A8A194
-P 4750 2050
-F 0 "J2" V 4549 1908 50  0000 R CNN
-F 1 "8-pin_header" V 4640 1908 50  0000 R CNN
-F 2 "CapTouchKeyboard:8-pinheader" H 4700 2250 60  0001 L CNN
-F 3 "" H 4700 2350 60  0001 L CNN
-	1    4750 2050
-	0    -1   1    0   
+P 1800 4650
+F 0 "J3" V 925 4650 50  0000 C CNN
+F 1 "8-pin_header" V 1016 4650 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 1750 4850 60  0001 L CNN
+F 3 "" H 1750 4950 60  0001 L CNN
+	1    1800 4650
+	-1   0    0    -1  
 $EndComp
 Text GLabel 6550 1650 0    50   Input ~ 0
 1
@@ -505,7 +460,6 @@ Connection ~ 10650 4250
 Wire Wire Line
 	10650 3950 10850 3950
 Connection ~ 10850 3950
-Connection ~ 7150 4950
 $Comp
 L Device:LED D5
 U 1 1 61AA408B
@@ -611,5 +565,110 @@ F 2 "LED_SMD:LED_0603_1608Metric_Castellated" H 8100 2250 50  0001 C CNN
 F 3 "~" H 8100 2250 50  0001 C CNN
 	1    8100 2250
 	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 61C235C6
+P 8750 1650
+F 0 "C7" V 8498 1650 50  0000 C CNN
+F 1 "C" V 8589 1650 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 8788 1500 50  0001 C CNN
+F 3 "~" H 8750 1650 50  0001 C CNN
+	1    8750 1650
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	8900 1350 8900 1650
+$Comp
+L power:GND #PWR0102
+U 1 1 61C251BC
+P 8900 1650
+F 0 "#PWR0102" H 8900 1400 50  0001 C CNN
+F 1 "GND" H 8905 1477 50  0000 C CNN
+F 2 "" H 8900 1650 50  0001 C CNN
+F 3 "" H 8900 1650 50  0001 C CNN
+	1    8900 1650
+	-1   0    0    -1  
+$EndComp
+Connection ~ 8900 1650
+$Comp
+L Device:C C6
+U 1 1 61C23035
+P 8750 1350
+F 0 "C6" V 8498 1350 50  0000 C CNN
+F 1 "C" V 8589 1350 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 8788 1200 50  0001 C CNN
+F 3 "~" H 8750 1350 50  0001 C CNN
+	1    8750 1350
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:Crystal Y1
+U 1 1 61C222CD
+P 8600 1500
+F 0 "Y1" V 8554 1631 50  0000 L CNN
+F 1 "Crystal" V 8645 1631 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_HC49-SD" H 8600 1500 50  0001 C CNN
+F 3 "~" H 8600 1500 50  0001 C CNN
+	1    8600 1500
+	0    -1   1    0   
+$EndComp
+Connection ~ 7150 4950
+Connection ~ 7150 1150
+Connection ~ 7250 1150
+Connection ~ 7050 1150
+Connection ~ 7350 1150
+Wire Wire Line
+	7150 1150 7250 1150
+Wire Wire Line
+	7250 1150 7350 1150
+Wire Wire Line
+	7050 1150 7150 1150
+Wire Wire Line
+	6950 1150 7050 1150
+$Comp
+L MCU_Microchip_SAMD:ATSAMD21J15B-A U1
+U 1 1 61A3E6B2
+P 7250 3050
+F 0 "U1" H 7250 1061 50  0000 C CNN
+F 1 "ATSAMD21J15B-A" H 7250 970 50  0000 C CNN
+F 2 "Package_QFP:TQFP-64_10x10mm_P0.5mm" H 8200 1200 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/SAM_D21_DA1_Family_Data%20Sheet_DS40001882E.pdf" H 7250 4050 50  0001 C CNN
+	1    7250 3050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 1550 8200 1550
+Wire Wire Line
+	8200 1550 8200 1650
+Wire Wire Line
+	8200 1650 8600 1650
+Connection ~ 8600 1650
+Wire Wire Line
+	8600 1350 7950 1350
+Wire Wire Line
+	7950 1350 7950 1450
+Connection ~ 8600 1350
+$Comp
+L power:GND #PWR03
+U 1 1 61A4F7DA
+P 7850 1150
+F 0 "#PWR03" H 7850 900 50  0001 C CNN
+F 1 "GND" V 7855 1022 50  0000 R CNN
+F 2 "" H 7850 1150 50  0001 C CNN
+F 3 "" H 7850 1150 50  0001 C CNN
+	1    7850 1150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x08_Female J2
+U 1 1 61A8A194
+P 4850 2000
+F 0 "J2" V 4649 1858 50  0000 R CNN
+F 1 "8-pin_header" V 4740 1858 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 4800 2200 60  0001 L CNN
+F 3 "" H 4800 2300 60  0001 L CNN
+	1    4850 2000
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
