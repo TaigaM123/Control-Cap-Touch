@@ -136,31 +136,9 @@ F 3 "~" H 10850 4100 50  0001 C CNN
 	1    10850 4100
 	-1   0    0    1   
 $EndComp
-Text GLabel 9250 5300 3    50   Input ~ 0
+Text GLabel 9150 5300 3    50   Input ~ 0
 ~RST
-$Comp
-L Connector:TestPoint TP10
-U 1 1 61A15B4A
-P 9250 5300
-F 0 "TP10" H 9308 5418 50  0000 L CNN
-F 1 "TestPoint" H 9308 5327 50  0000 L CNN
-F 2 "CapTouchKeyboard:PC_TEST_POINT_SMD" H 9450 5300 50  0001 C CNN
-F 3 "~" H 9450 5300 50  0001 C CNN
-	1    9250 5300
-	1    0    0    -1  
-$EndComp
 Connection ~ 3600 1250
-$Comp
-L Connector:TestPoint TP9
-U 1 1 61A4565D
-P 8750 5300
-F 0 "TP9" H 8808 5418 50  0000 L CNN
-F 1 "TestPoint" H 8808 5327 50  0000 L CNN
-F 2 "CapTouchKeyboard:PC_TEST_POINT_SMD" H 8950 5300 50  0001 C CNN
-F 3 "~" H 8950 5300 50  0001 C CNN
-	1    8750 5300
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR014
 U 1 1 61A45E26
@@ -669,6 +647,17 @@ F 1 "8-pin_header" V 4740 1858 50  0000 R CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 4800 2200 60  0001 L CNN
 F 3 "" H 4800 2300 60  0001 L CNN
 	1    4850 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 61C63258
+P 8950 5300
+F 0 "SW1" H 8950 5585 50  0000 C CNN
+F 1 "SW_Push" H 8950 5494 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" H 8950 5600 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371" H 8950 5600 50  0001 C CNN
+	1    8950 5300
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
