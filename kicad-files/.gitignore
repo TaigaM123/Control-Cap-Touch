@@ -24,6 +24,7 @@ fp-info-cache
 # Autorouter files (exported from Pcbnew)
 *.dsn
 *.ses
+*.bin
 
 # Exported BOM files
 *.xml
